@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="scaleIpad">
+        <h2 class="vhmt10 plantitle fontv9">Set Up Your Plan</h2>
+        <h3 class="vhmt2 plantitle fontv5">It's time to get serious.</h3>
+        <h4 class="vhmt2 plantitleblack  fontv4">Changing the habits of a lifetime needs some planning, follow these steps to get started.</h4>
+        <div id="setupMenu" class="vw90 vwh90 vhmt5">
+            <div class="outerblue center vw35 vwh35"></div>
+            <div  ontouchstart='
+    pageChange("pages/start/start1.html", "fade", function() {
+                              startPlan();
+    displayBotMenu("", true);
+    });' id="goFinish" class="go vw20 vwh20 fontv10 lineh20 center">GO</div>
+            <div ontouchstart='
+    pageChange("pages/setup/start-date.html", "popup", function() {
+                          dateSelection();   
+                           
+    });'  id="date" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt2 vhmb1" src="img/buttons/setup/date.png" />
+                <p class="fontv3 lineh3 vhmt3">set your<br>start date</p></div>
+            <div ontouchstart='var ref = cordova.InAppBrowser.open("http://www.viridian-nutrition.com/search.aspx", "_blank", "location=yes");
+     setupComplete(2);   
+            setupPage();   
+                          
+    displayMenu("", true, "setup/getting-started.html",function() {
+            setupPage();
+    });
+    displayBotMenu("", true);' id="map" class="greencircle vw24 vwh24 fontv4">
+                <img class="vhmt1 vhmb1" src="img/buttons/setup/map.png" />
+                <p class="fontv3 lineh3 vhmt3">Find your<br>supplement stockist</p></div>
+            <div ontouchstart='
+    pageChange("pages/setup/rules.html", "popup", function() {
+     setupComplete(3);      
+                          rulesPop();
+                          
+    });' id="tasks" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt2 vhmb1" src="img/buttons/setup/tasks.png" />
+                <p class="fontv3 lineh3 vhmt3">See the rules<br>of 7 Day<br>Detox</p></div>
+            <div ontouchstart='
+    pageChange("pages/setup/schedule.html", "popup", function() {
+                          timeSelection();   
+     setupComplete(4); 
+                          
+    });' id="clock" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt1 vhmb1" src="img/buttons/setup/clock.png" />
+                <p class="fontv3 lineh3 vhmt3">Set your<br>supplement<br>schedule</p></div>
+            <div ontouchstart='
+    pageChange("pages/setup/intake.html", "fade", function() {
+                          intake();                 
+    displayMenu("", true, "set-up.html",function() {
+     setupComplete(5);
+        setupPage();    profileAccept();
+    });   
+    });' id="spoon" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt3 vhmb1" src="img/buttons/setup/spoon.png" />
+                <p class="fontv3 lineh3 vhmt3">Set your<br>current sugar<br>intake</p></div>
+            <div   ontouchstart='
+    pageChange("pages/setup/motivation.html", "popup", function() {
+                                 openMotivator();
+    });'id="happy" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt1 vhmb1" src="img/buttons/setup/happy.png" />
+                <p class="fontv3 lineh3 vhmt3">Set your<br>motivation<br>to detox</p></div>
+            <div ontouchstart='
+    pageChange("pages/setup/7dayplan.html", "fade", function() {  
+                          sevenDayPlan();
+    displayMenu("", true, "set-up.html",function() {
+     setupComplete(7); 
+        setupPage();                      
+    });   
+    });'id="food" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt1 vhmb1" src="img/buttons/setup/food.png" />
+                <p class="fontv3 lineh3 vhmt3">See the 7 day<br>meal plan &<br>shopping list </p></div>
+            <div ontouchstart='
+    pageChange("pages/setup/setprofile.html", "fade", function() {
+         idc("profileNext").style.display = "block";            
+    displayMenu("", true, "set-up.html",function() {
+     setupComplete(8); 
+        setupPage();                      
+    });   
+                          profileSetup();          
+    });'id="profile" class="greencircle vw24 vwh24 fontv4 ">
+                <img class="vhmt1 vhmb1" src="img/buttons/setup/profile.png" />   
+                <p class="fontv3 lineh3 vhmt3">Set your <br>personal <br>profile</p></div>
+        </div>
+        <style>
+            #profile {
+                top:8.5%;
+                left:8.5%;
+            }
+            #food {
+                bottom:0;
+                top:0;
+                left:0;
+                margin:auto;
+            }
+            #happy {
+                left:8.5%;
+                bottom:8.5%;
+            }
+            #spoon {
+                bottom:0;
+                margin:auto;
+                right:0;
+                left:0;
+            }
+            #clock {
+                right:8.5%;
+                bottom:8.5%;
+            }
+            #tasks {
+                top:0;
+                bottom:0;
+                margin:auto;
+                right:0;
+            }
+            #map {
+                right:8.5%;
+                top:8.5%;
+            }
+            .greencircle img {
+                max-height:30%;
+                max-width:70%;
+                margin-right:auto;
+                margin-left:auto;
+                display:block;
+            }
+            #date {
+                top:0;
+                left:0;
+                right:0;margin:auto;
+            }
+            .greencircle p {
+                margin:0;
+                text-align:center;
+            }
+            .greencircle {
+                background-color: #bacb2f;
+                color:#007086;
+                border-radius: 200em;
+                position: absolute;
+                border:2px solid #fff;
+            }
+            .outerblue {
+                background-color:#007086;
+                border-radius: 200em;
+                position: absolute;
+            }
+            .go {
+                background-color: #bacb2f;
+                color:#007086;
+                box-shadow:inset 0px 0px 0px 1px #fff;
+                position: absolute;
+                border-radius: 200em;
+                text-align: center;
+                visibility: hidden;
+            }
+            .plantitle {
+                text-align: center;
+                color:#007086;
+                font-weight: normal;
+                margin-bottom:0;
+            }
+            .plantitleblack {
+                color:#000;
+                font-weight: normal;
+                text-align: center;
+                width:90%;
+                margin-bottom:0;
+                margin-left:5%;
+            }
+            #setupMenu {
+                position: relative;
+                margin-right:5%;
+                margin-left:5%;
+            }
+            .center {
+                left:0;right:0;top:0;bottom:0;margin:auto;
+            }
+        </style>
+        </div>
+    </div>
+</body>
+
+</html>

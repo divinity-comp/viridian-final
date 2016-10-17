@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        
+        <div id="fullrecipe">
+        <div id="highSection" class="vhmt10 ">
+            <button class="greyCircle vw22 vwh22 fontv6">
+                Day 2
+            </button>
+            <div class="recipe">
+                <h2 class="fontv9 vhmt12 fontti vhmb1" style="margin-top:0">Today's Recipes</h2>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(0)" ontouchstart="recipeTime(0)" active="true"><span>Breakfast</span></div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(1)" ontouchstart="recipeTime(1)">Lunch</div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(2)" ontouchstart="recipeTime(2)">Snack</div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(3)" ontouchstart="recipeTime(3)">Dinner</div>
+            </div>
+        </div>
+            <div class="nextday vhmt2">
+                <button class="fontv4 lineh6" ontouchstart=' pageChange("pages/recipes/day1.html", "fade", function() {
+    });'>Previous day</button>
+                <button class="fontv4 lineh6" ontouchstart=' pageChange("pages/recipes/day3.html", "fade", function() {
+    });'>Next day</button>
+            </div>
+        <div id="breakfast" class="ingrd  vh60" active="true">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Breakfast</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">1</span></div>
+                    
+				</div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Sugar free musesli,
+greek yoghurt and
+fresh fruit</h2>
+                    <p class="fontv3">This is a great combination to help fuel a busy morning. Complex carbohydrates and fibre from the muesli provide a slow release energy throughout the day, protein from the Greek yoghurt and multiple antioxidants through the fresh fruit. </p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="lunch" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Lunch</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">1</span></div>
+                    <div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/fresh-garden-salad-with-roasted-seed-&-nut-sprinkles.jpg);"></div>
+                    
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Fresh garden salad
+with roasted seed and
+nut sprinkles</h2>
+                    <p class="fontv3">Mixed seeds and nuts are a great source of iron and magnesium, restoring energy and increasing vitality. High source of protein, essential fats, dietary fibre and vitamin A, which is a powerful antioxidant involved in healthy vision and neurological functioning. </p>
+                </div>
+            </div>
+            <div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 1)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 1)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">75 g mixed nuts and seeds</p>
+                <hr>
+                <p class="fontv4">Bag of mixed seasonal salad & herb leaves</p>
+                <hr>
+                <p class="fontv4">Quarter of a cucumber</p>
+                <hr>
+                <p class="fontv4">5 cherry tomatoes </p>
+                <hr>
+                <p class="fontv4">½ bell pepper</p>
+                <hr>
+                <p class="fontv4">1 spring onion</p>
+                <hr>
+                <p class="fontv4">2-3 radish </p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Take 75 grams of mixed nuts and seeds, place in a roasting dish and roast in the oven at 200C until golden.</li>
+                    <li class="fontv4">Fill one third of your plate with mixed seasonal salad and herb leaves.  Add sliced cucumber, quartered tomatoes, sliced pepper, chopped spring onions, sliced radish.</li>
+                    <li class="fontv4">Sprinkle the roasted nuts and seeds on top </li>
+                </ol>
+                <p  class="fontv4">Optional:  Whisk Viridian Organic Black Seed Oil with the juice of half a lemon, add some basil and dress the salad.</p>
+            </div>
+        </div>
+        <div id="snack" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Snack</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Makes<br><span class="fontv4">12</span></div>
+                    <div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/coconut-500px.jpg" ></div>
+                    
+                </div>  
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Coconut crunches</h2>
+                    <p class="fontv3">Vegan Sugar, Gluten and Dairy free contains nuts</p>
+                    <p class="fontv3">Perfect for a nibble or with your hot evening drink.</p>
+                    <p class="fontv3">Before
+you know it, you’ll be acting the nut!
+High in essential fats, plant protein, dietary fibre,
+vitamin E and zinc. Low GL.</p>
+                </div>
+            </div>
+            <div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 2)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 2)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">170g pecans</p>
+                <hr>
+                <p class="fontv4">170g almonds</p>
+                <hr>
+                <p class="fontv4">290g creamed coconut</p>
+                <hr>
+                <p class="fontv4">3 tablespoons of viridian organic raw coconut oil</p>
+                <hr>
+                <p class="fontv4">¼ teaspoon Himalayan fine rock salt</p>
+                <hr>
+                <p class="fontv4">25g desiccated coconut, toasted</p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Preheat the oven to 150°C/gas mark 2/300°F.</li>
+<li class="fontv4">Spread the nuts on a baking sheet and toast very lightly for
+15 minutes.</li>
+                    <li class="fontv4">Process the agave sugar in a food processor until it’s very fine. Place the jar of creamed coconut in hot water to soften it. In a medium-sized bowl, beat the creamed coconut, coconut oil, agave sugar and salt with an electric mixer until creamy. Fold in the toasted nuts and mix well with a large spoon until all the nuts are well coated.</li>
+                    <li class="fontv4">Line the baking sheet with parchment paper and spread
+out the nut mixture evenly. Sprinkle with the desiccated
+                        coconut and place the baking sheet in the refrigerator.</li>
+<li class="fontv4">When cold, break into bite-size pieces. Store in an airtight
+container in the refrigerator for up to ten days.</li>
+                </ol>
+            </div>
+        </div>
+                   
+        <div id="dinner" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Dinner</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">4</span></div>
+                    <div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/sweet-potato-curry_500px.jpg);"></div>
+                    
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Sweet potato & Quinoa curry</h2>
+                    <p class="fontv3">Vegan, Sugar, Gluten, Dairy and Nut free, contains Soya
+and Celery</p>
+                    <p class="fontv3">When making broth, I usually use organic, low-salt, noyeast,
+gluten-free stock cubes, which you
+can find in your local health-food shop. High
+in plant protein, dietary fibre, essential fats and B
+vitamins.</p>
+                </div>
+            </div><div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 3)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 3)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">2 tablespoons viridian organic raw coconut oil</p>
+                <hr>
+                <p class="fontv4">1 large red onion, finely chopped</p>
+                <hr>
+                <p class="fontv4">1 clove of garlic, minced</p>
+                <hr>
+                <p class="fontv4">1 teaspoon grated fresh root ginger</p>
+                <hr>
+                <p class="fontv4">1 unsalted, gluten-free vegetable stock cube</p>
+                <hr>
+                <p class="fontv4">400ml hot water</p>
+                <hr>
+                <p class="fontv4">2 medium sweet potatoes, peeled and diced</p>
+                <hr>
+                <p class="fontv4">1 x 400g can of chickpeas, drained and rinsed</p>
+                <hr>
+                <p class="fontv4">200g quinoa</p>
+                <hr>
+                <p class="fontv4">1 tablespoon mild curry powder</p>
+                <hr>
+                <p class="fontv4">1 tablespoon ground cumin</p>
+                <hr>
+                <p class="fontv4">80g baby spinach</p>
+                <hr>
+                <p class="fontv4">Himalayan fine rock salt and freshly ground black pepper</p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Heat the coconut oil in a large pan over a low to medium heat.
+Add the onion, garlic and ginger and cook for 5–8 minutes,
+until softened.</li>
+                    <li class="fontv4">Dissolve the stock cube (if using) in 400ml of hot water
+in a Pyrex jug. Add the broth or water, sweet potatoes,
+                        chickpeas, quinoa, curry powder and cumin to the pan.</li>
+                    <li class="fontv4">Bring to a boil, then reduce the heat and cover.</li>
+<li class="fontv4">Simmer for 20 minutes, until the quinoa and sweet
+potatoes are cooked through. Add a little water if the liquid
+evaporates before the quinoa is fully cooked.</li>
+                    <li class="fontv4">Add the spinach and stir well. Cover again and cook just
+until the spinach has wilted. Add salt and pepper if desired.</li>
+                </ol>
+            </div>
+    </div> 
+		<div class="printer">
+		<img onclick="printRecipe()" src="img/print.png" /><p onclick="printRecipe()">Print</p>
+		</div>
+        </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <img class="maxh5 vhmt2 nextButton" ontouchstart='
+    pageChange("pages/set-up.html", "fade", function() {
+        setupPage();                      
+     allaboutComplete(8);       
+    });' src="img/buttons/next.png" />
+        <div id="scaleIpad" class="highAdjust">
+        <div class="blueCentralCircle vw100 vwh100 scaleAddlow">
+            <h2 class="fontv7 vhmt6 vhmb1" style="color:#abc433;font-weight:normal;">The 7 Day <br>Eating plan</h2>
+            <div>
+                <p class="fontv4">Super Food Chef Oliver McCabe <br>has created a 7 day meal plan<br>exclusively for our 7 day sugar detox.<br>It provides tasty,energy boosting meals<br> every day guaranteed to make you feel great.</p>
+                <div class="vw52 greenContain">
+                    <div ontouchstart='
+    pageChange("pages/setup/7dayplan.html", "fade", function() {  
+      sevenDayPlan();
+        displayMenu("", true, "allabout/allabout8.html",function() {
+            displayMenu("", true, "all-about.html",function() {
+     allaboutComplete(8);   
+            });  
+        });   
+    });' class="greenBubble vw24 vwh24">
+                        <p class="fontv5 lineh5">See our<br>meal<br>plan</p>
+                    </div>
+                    <div ontouchstart='
+    pageChange("pages/setup/shoppinglist.html", "fade", function() {  
+        displayMenu("", true, "allabout/allabout8.html",function() {
+            displayMenu("", true, "all-about.html",function() {
+     allaboutComplete(8);   
+            });  
+        });   
+    });' class="greenBubble vw24 vwh24 ">
+                        <p class="fontv5 lineh5 vhmt5">Shopping<br>List</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .greenContain {
+                margin:0 auto;
+            }
+            .greenBubble {
+                background-color:#bacb2f;
+                border:1px solid #fff;
+                color:#007086;
+                float:left;
+                border-radius:200em;
+            }
+            .greenBubble:nth-child(1) {
+                margin-right:4%;
+            }
+        </style>
+        </div>
+    </div>
+</body>
+
+</html>

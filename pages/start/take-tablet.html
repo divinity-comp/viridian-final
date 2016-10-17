@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="scaleIpad">
+        <img class="close" ontouchstart="closePopup()" src="img/close.png" />
+        <div id="times" class="blueCentralCircle vw90 vwh90 " >
+                <h2 class="ttile vhmt8 fontv5">Time to take<br>your tablet</h2>
+                <div class="greenSupp vw35 vwh35"><img src="img/initial/supp.png"/></div>
+            
+            <button ontouchstart="
+            closePopup()" class="setButton vw25 vwh25 fontv7">Done</button>
+        </div>
+        <style>
+            .greenSupp img{
+                position: absolute;
+                margin:auto;
+                left:0;right:0;bottom:0;top:0;
+                max-width:60%;
+            }
+            .greenSupp {
+                position: relative;
+                background-color:#bacb2f;
+                border-radius: 200em;
+                margin:0 auto;
+            }
+            .greencircle p {
+                margin:0;
+                text-align:center;
+            }
+            .ttile {
+                color:#bacb2f;
+            }
+            .times .greencircle span, .times .greencircle b {
+                position: relative;
+                display: block;float:left;
+            }
+            .times .greencircle p {
+                text-align: center;
+                margin-left:0.3em;
+            }
+            .times .greencircle span:after {
+                content:'';
+                position: absolute;
+                height:300%;
+                top:-100%;
+                width:100%;
+                left:0;
+                padding:0 0.3em;
+            }
+        </style>
+        </div>
+    </div>
+</body>
+
+</html>

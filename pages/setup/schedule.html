@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="scaleIpad">
+        <img class="close" ontouchstart="setReminders();
+            setupPage();closePopup()" src="img/close.png" />
+        <div id="times" class="blueCentralCircle vw90 vwh90 " >
+                <h2 class="ttile vhmt8 fontv5">What's your day like?</h2>
+                <p class="fontv4">Decide when would be the best time<br> to take your supplements</p>
+            
+            <div class="vw56 times">
+                
+                <div  class="greencircle vw25 vwh25 fontv4 ">
+                    <p class="fontv8 lineh25 vhmt4"><span class="vwh25 ">07</span><b>:</b><span class="vwh25 fontv8">30</span></div>
+                <div class="greencircle vw25 vwh25 fontv4 ">
+                    <p class="fontv8 lineh25 vhmt4"><span class="vwh25 ">18</span><b>:</b><span class="vwh25 fontv8">30</span></div>
+                <p class="vw25 reminder fontv3">Reminder 1</p>
+                <p class="vw25 reminder fontv3">Reminder 2</p>
+            </div>
+            <button ontouchstart="setReminders();
+            setupPage();closePopup()" class="setButton vw25 vwh25 fontv7">Set</button>
+        </div>
+        <style>
+            .greencircle p {
+                margin:0;
+                text-align:center;
+            }
+            .ttile {
+                color:#bacb2f;
+            }
+            .times {
+                margin:0 auto;
+            }
+            .times .greencircle {
+                background-color: #bacb2f;
+                color:#007086;
+                border-radius: 200em;
+                border:2px solid #fff;
+                float:left;
+                position: relative;
+                margin-left:2%;
+                opacity:1 !Important;
+            }
+            .reminder {
+                float:left;
+                color:#fff;;
+                margin-left:2%;
+            }
+            .times .greencircle span, .times .greencircle b {
+                position: relative;
+                display: block;float:left;
+            }
+            .times .greencircle p {
+                text-align: center;
+                margin-left:0.3em;
+            }
+            .times .greencircle span:after {
+                content:'';
+                position: absolute;
+                height:300%;
+                top:-100%;
+                width:100%;
+                left:0;
+                padding:0 0.3em;
+            }
+        </style>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        
+        <div id="fullrecipe">
+        <div id="highSection" class="vhmt10 ">
+            <button class="greyCircle vw22 vwh22 fontv6">
+                Day 1
+            </button>
+            <div class="recipe">
+                <h2 class="fontv9 vhmt12 fontti vhmb1" style="margin-top:0">Today's Recipes</h2>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(0)" ontouchstart="recipeTime(0)" active="true"><span>Breakfast</span></div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(1)" ontouchstart="recipeTime(1)">Lunch</div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(2)" ontouchstart="recipeTime(2)">Snack</div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(3)" ontouchstart="recipeTime(3)">Dinner</div>
+            </div>
+        </div>
+            <div class="nextday vhmt2">
+                <button class="fontv4 lineh6" style="float:right;" ontouchstart=' pageChange("pages/recipes/day2.html", "fade", function() {
+    });'>Next day</button>
+            </div>
+        <div id="breakfast" class="ingrd  vh60" active="true">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Breakfast</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">4</span></div>
+                    <div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/sugar-free-chia-granola-image_500px.jpg);"></div>
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Sugar Free Chia Seed Granola</h2>
+                    <p class="fontv3">Vegan, Sugar, gluten & dairy free</p>
+                    <p class="fontv3">I love making this when I have friends staying over. I
+serve
+it with chopped ripe banana, and natural yoghurt.
+High in plant protein, essential fats, dietary fibre,
+zinc and vitamin E, which is particularly good for the
+skin.<br>
+Low GL.</p>
+                </div>
+            </div>
+            <div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 0)" ontouchstart="methodswap(0, 0)"  active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 0)" ontouchstart="methodswap(1, 0)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">5 tablespoons viridian organic raw coconut oil, melted</p>
+                <hr>
+                <p class="fontv4">1½ tablespoons ground cinnamon</p>
+                <hr>
+                <p class="fontv4">1/8 teaspoon Himalayan fine rock salt</p>
+                <hr>
+                <p class="fontv4">250g brown rice flakes</p>
+                <hr>
+                <p class="fontv4">125g quinoa flakes</p>
+                <hr>
+                <p class="fontv4">65g pumpkin seeds</p>
+                <hr>
+                <p class="fontv4">65g chia seeds</p>
+                <hr>
+                <p class="fontv4">65g hemp seeds</p>
+                <hr>
+                <p class="fontv4">60g dried cranberries</p>
+                <hr>
+                <p class="fontv4">50g walnuts, chopped</p>
+                <hr>
+                <p class="fontv4">30g dried goji berries</p>
+                <hr>
+                <p class="fontv4">4 dried figs, chopped</p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Preheat the oven to 170°C/gas mark 3/325°F.</li>
+                    <li class="fontv4">Combine the melted coconut oil, cinnamon
+and salt in a small bowl.</li>
+                    <li class="fontv4">Mix the brown rice flakes, quinoa flakes and all the seeds
+in a large bowl. Pour the liquid mixture into the bowl and
+mix until uniform (you can use your hands, but make sure
+they’re clean).</li>
+                    <li class="fontv4">Spread the granola on a baking sheet and bake for 45
+minutes, until golden. Remove and allow to cool before
+mixing in the remaining ingredients.</li>
+                    <li class="fontv4">Granola should be kept in an airtight container in a cool shaded place or in the
+fridge for up to ten days.</li>
+                </ol>
+            </div>
+        </div>
+        <div id="lunch" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Lunch</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">4</span></div>
+					<div class="recipeImage vw20 vwh20" style="
+    background-position: 90% 0%;background-image:url(img/food-images/quinoa-green-bean-salad.jpg);"></div>
+
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Quinoa Green Bean Salad</h2>
+                    <p class="fontv3">Vegan, Sugar, Gluten, Dairy and Nut Free</p>
+                    <p class="fontv3">Quinoa (pronounced KEEN-wah) is a light whole grain
+with
+plenty of protein. Once you try it, you’ll invite it back to
+your table again and again. Always wash the quinoa in a
+sieve before you use it to remove any grit or dirt. Use a
+wooden spoon to gently clean the grain. Taste a grain, and if
+it’s bitter, wash it some more.
+You can substitute any of the three beans with what
+you can get on sale or from your garden. Canned pinto
+or
+black beans are fine too. This beautiful, delicious
+summer
+salad works as a side dish or as a vegetarian starter.
+High in
+protein, magnesium and fibre.</p>
+                </div>
+            </div><div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 1)" ontouchstart="methodswap(0, 1)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 1)" ontouchstart="methodswap(1, 1)" >Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">200g quinoa</p>
+                <hr>
+                <p class="fontv4">500ml water</p>
+                <hr>
+                <p class="fontv4">Himalayan fine rock salt</p>
+                <hr>
+                <p class="fontv4">240g fresh French beans</p>
+                <hr>
+                <p class="fontv4">310g canned chickpeas, rinsed and drained</p>
+                <hr>
+                <p class="fontv4">160g canned kidney beans, rinsed and drained</p>
+                <hr>
+                <p class="fontv4">160g canned kidney beans, rinsed and drained chopped</p>
+                <hr>
+                <p class="fontv4">1 teaspoon dried tarragon</p>
+                <hr>
+                <p class="fontv4">Freshly ground black pepper
+For the dressing</p>
+                <hr>
+                <p class="fontv4">3 tablespoons extra virgin olive oil</p>
+                <hr>
+                <p class="fontv4">1 tablespoon balsamic vinegar</p>
+                
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Rinse the quinoa under cold running water and drain. Bring
+the water to a boil in a small pot. Stir in the quinoa and a
+pinch of salt. Reduce the heat, cover and simmer for 15–20
+minutes, until the quinoa is fluffy and tender and all the
+water has been absorbed. Remove from the heat, uncover
+and let it cool.</li>
+                    <li class="fontv4">Meanwhile, bring a medium-sized pan of unsalted water to
+a boil. Top and tail the French beans and cut them into 5cm pieces. Blanch these beans for 3–5 minutes, until tender but
+still crunchy. Lift them into a colander with a slotted spoon
+and refresh under cold running water, then drain and dry
+well with a tea towel.</li>
+                    <li class="fontv4">Whisk together the olive oil and balsamic vinegar in a small
+bowl. Put the cooled quinoa in a large bowl with the French
+beans, chickpeas, kidney beans, red pepper, tarragon and
+some salt and pepper and toss with the dressing. Serve
+chilled or at room temperature.</li>
+                </ol>
+            </div>
+        </div>
+        <div id="snack" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Snack</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">1</span></div>
+					<div class="recipeImage vw20 vwh20" style="
+    background-position: 90% 0%;background-image:url(img/food-images/a-handful-of-almonds.jpg);"></div>
+                    
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">A handful of almonds</h2>
+                    <p class="fontv3">A nutrient dense snack which is easy to grab on the go. Almonds are a high source of protein, essential fats, fibre. magnesium and antioxidant vitamin E, all of which help with cognitive function, heart health and healthy skin maintenance. </p>
+                </div>
+            </div>
+                    
+        </div>
+        <div id="dinner" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Dinner</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">5</span></div>
+					<div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/fully-loaded-paella.jpg);"></div>
+                    
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Fully Loaded Paella</h2>
+                    <p class="fontv3">Vegan, Sugar, Gluten, Dairy and Nut free, contains Soya
+and Celery</p>
+                    <p class="fontv3">
+
+I use frozen edamame beans for this dish, which you
+can
+find in your local health-food shop. They’ll
+keep in your freezer for up to four months. They are
+very
+high in protein and lecithin, which may lower
+cholesterol.
+High in dietary fibre, essential fats, allicin, lycopene and
+plant
+protein. Low GL..</p>
+                </div>
+            </div><div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 3)" ontouchstart="methodswap(0, 3)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 3)" ontouchstart="methodswap(1, 3)" >Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">3 tablespoons viridian organic raw coconut oil</p>
+                <hr>
+                <p class="fontv4">1 large onion, chopped finely</p>
+                <hr>
+                <p class="fontv4">6 cloves of garlic, minced</p>
+                <hr>
+                <p class="fontv4">½ teaspoon chilli flakes</p>
+                <hr>
+                <p class="fontv4">Pinch of Himalayan fine rock salt</p>
+                <hr>
+                <p class="fontv4">2 large yellow peppers, diced</p>
+                <hr>
+                <p class="fontv4">1 x 400g can of whole plum tomatoes, roughly chopped</p>
+                <hr>
+                <p class="fontv4">2 tablespoons chopped fresh thyme</p>
+                <hr>
+                <p class="fontv4">1 teaspoon chilli powder</p>
+                <hr>
+                <p class="fontv4">1 tablespoon paprika</p>
+                <hr>
+                <p class="fontv4">Half a teaspoon of viridian maca powder</p>
+                <hr>
+                <p class="fontv4">250g Arborio rice</p>
+                <hr>
+                <p class="fontv4">2 low-salt, gluten-free vegetable stock cubes</p>
+                <hr>
+                <p class="fontv4">600ml hot water</p>
+                <hr>
+                <p class="fontv4">225g edamame beans</p>
+                <hr>
+                <p class="fontv4">15g fresh coriander, chopped</p>
+                <hr>
+                <p class="fontv4">15g fresh flat-leaf parsley, chopped</p>
+                <hr>
+                <p class="fontv4">Pinch of freshly ground black pepper</p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Heat the oil in a large wok over a low to medium
+heat. Sauté the onion, garlic, chilli flakes and a pinch of salt
+for 5–8 minutes, until the onions are soft. Add the yellow
+peppers, tomatoes, thyme, chilli powder and paprika and
+simmer, covered, for 10 minutes. Stir in the rice to coat it
+well.</li>
+                    <li class="fontv4">Dissolve the stock cubes in the hot water in a Pyrex jug,
+then pour into the wok. Cover and reduce the heat to low.
+Cook until the rice is tender and most of the liquid has been
+absorbed. This should take about 25 minutes.</li>
+                    <li class="fontv4">Add the edamame beans towards the end of the cooking
+time. Stir in the fresh herbs, maca and season to taste with black
+pepper before dishing up.</li>
+                </ol>
+            </div>
+        </div>
+		<div class="printer">
+		<img onclick="printRecipe()" src="img/print.png" /><p onclick="printRecipe()">Print</p>
+		</div>
+        </div>
+    </div>
+</body>
+
+</html>

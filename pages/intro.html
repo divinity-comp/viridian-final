@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="scaleIpad" class="highAdjust">
+        <div id="initial" class="blueCentralCircle vw100 vwh100 scaleAdd">
+            <div class="slide active" scale="0.75" num="0">
+                <h2 class="fontv14 vwmt23">How the<br>7 Day Detox<br>works</h2>
+            </div>
+            <div class="slide " num="1" scale="1.2">
+                <div class="whiteCircle vw60 vwh60 vwmt20">
+                    <div class="greenCircle vw100 vwh100 ">
+                        <h2 class="fontv7 vwmt65">Decide you<br>want to quit<br>sugar</h2>
+                    </div>
+                </div>
+                <img class="bowl" src="img/initial/bowl.png" />
+                <div class="sugarline vw2 vwh14"></div>
+                <img class="sugar" src="img/initial/sugar.png" />
+            </div>
+            <div class="slide " num="2" scale="1.2">
+                <div class="greenMainCircle vw60 vwh60 vwmt20">
+                        <h2 class="fontv8 vwmt7">Get your<br>Viridian<br>7 Day Detox<br>pack</h2>
+                </div>
+                <img class="bag"  src="img/bag.png"/>
+            </div>
+            <div class="slide " num="3" scale="1.2">
+                <div class="greenMainCircle vw60 vwh60 vwmt20">
+                        <h2 class="fontv8 vwmt15">Follow our<br>7 Day Detox<br>eating plan</h2>
+                </div>
+                <img class="leftCult maxh30"  src="img/initial/fork.png"/>
+                <img class="rightCult maxh30"  src="img/initial/knife.png"/>
+            </div>
+            <div class="slide " num="4" scale="1.2">
+                <div class="greenMainCircle vw60 vwh60 vwmt20">
+                    <h2 class="fontv8 vwmt15">Take your<br>Viridian<br>Supplements</h2>
+                </div>
+                <img class="supp" src="img/initial/supp.png"/>
+            </div>
+            <div class="slide " num="5" scale="1.2">
+                <div class="greenMainCircle circleTime vw60 vwh60 vwmt20">
+                    <h2 class="fontv8 vwmt20" style="position:relative;z-index:2000;">After<br>7 days...</h2>
+                </div>
+            </div>
+            <div class="slide " num="6" scale="1.2">
+                <div class="greenMainCircle  vw60 vwh60 vwmt20">
+                    <h2 class="fontv7 vwmt7">Feel<br>transformed</h2>
+                    <img class="happy" src="img/initial/smile.png"/>
+                </div>
+                <img ontouchstart='var ref = cordova.InAppBrowser.open("http://www.viridian-nutrition.com/search.aspx", "_blank", "location=yes");' class="pack" src="img/initial/pack.png"/>
+            </div>
+        </div>
+        <div class="slideMenu vw34 vwh1">
+            <div class="vw2 vwh2 active"></div>
+            <div class="vw2 vwh2 "></div>
+            <div class="vw2 vwh2 "></div>
+            <div class="vw2 vwh2 "></div>
+            <div class="vw2 vwh2 "></div>
+            <div class="vw2 vwh2 "></div>
+            <div class="vw2 vwh2 "></div>
+        </div>
+        </div>
+            <button id="registerSlide" ontouchstart="loginPage()" class="registerSlide fontv5" >Register</button>
+        <style>
+            .registerSlide {
+                position: absolute;
+                background: #047086;
+                color:#beca43;
+                visibility: hidden;
+                border:0;
+                left:0;
+                width:100%;
+                padding:1em ;
+                bottom:0;
+            }
+            .pack {
+                position: absolute;
+                left:0;right:0;margin:auto;
+                max-width:35%;
+                bottom:-32%;
+            }
+            .happy {
+                max-width:29%;
+            }
+            .supp {
+                position: absolute;
+                left:0;right:0;margin:auto;
+                max-width:20%;
+                bottom:-5%;
+            }
+            .leftCult {
+                position: absolute;
+                left:12%;top:40%;
+            }
+            .rightCult {
+                position: absolute;
+                right:12%;top:42%;
+            }
+            .bag {
+                position: absolute;
+                max-width:25%;
+                bottom:-30%;
+                left:0;right:0;margin:auto;
+            }
+            .sugar {
+                position: absolute;
+                max-width: 15%;
+                bottom:-17.8%;
+                left:0;
+                right:0;
+                margin:auto;
+            }
+            .sugarline {
+                position: absolute;
+                background-color:#fff;
+                left:0;right:0;margin:auto;
+            }
+            .bowl {
+                position: absolute;
+                max-width: 30%;
+                bottom:-32%;
+                left:0;
+                right:0;
+                margin:auto;
+            }
+            .whiteCircle,.greenMainCircle {
+                background-color:#fff;
+                border-radius: 200em;
+                position: relative;
+                margin-right:auto;margin-left: auto;
+                overflow: hidden;
+            }
+            .greenMainCircle {
+                background-color:#abc433;
+            }
+            .greenCircle {
+                background-color:#abc433;
+                border-radius: 200em;
+                position: absolute;
+                left:-33%;
+                bottom:15%;
+            }
+            #initial .slide {
+                visibility: hidden;
+                top:0;
+                position: absolute;
+                left:0;
+                width:100%;
+            }
+            #initial .slide.active {
+                visibility: visible;
+            }
+            h2 {
+                font-weight: normal;
+                color:#abc433;
+            }
+            .slideMenu div {
+                background-color: rgba(0,0,0,0.6);
+            }
+            .slideMenu div.active {
+                background-color: rgba(0,0,0,1);
+            }
+            .slideMenu div {
+                margin:0 4%;    
+            }
+            .greenCircle h2,.greenMainCircle h2 {
+color:#007086;
+            }
+            .circleTime {
+                background-image: url(img/initial/span.png);
+                background-size: cover;
+                
+            }
+                @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (orientation: portrait) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+                .slideMenu {
+                    bottom:-10%;
+                }
+
+            }
+        </style>
+    </div>
+</body>
+
+</html>

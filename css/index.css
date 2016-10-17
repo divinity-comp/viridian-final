@@ -1,0 +1,551 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+button:focus {outline:0;}
+img {
+    max-width:100%;
+}
+html {
+    width:100%;
+    height:100%;
+}
+
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#fff;
+    font-family:'museo500', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    color:#4d4d4d;
+    overflow:hidden;
+}
+.textureBack {
+    background-image: url(../img/background-pattern.jpg);
+    background-size:cover;
+}
+
+#full {
+    width:100%;
+    height:100%;
+    position: relative;
+    overflow:hidden;
+}
+
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/Museo500-Regular-webfont.eot');
+    src: url('../fonts/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo500-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Museo500-Regular-webfont.woff') format('woff'),
+         url('../fonts/Museo500-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Museo500-Regular-webfont.svg#museo500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.blueCentralCircle {
+    background-color: #007086;
+    position: absolute;
+    border-radius: 2000px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.greenText {
+    color:#bacb2f;
+}
+
+.blueText {
+    color:#007086;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.normal {
+    font-weight:normal;
+}
+
+#navigation {
+    width:100%;
+    background-color:#fff;
+    box-shadow:0px 0px 15px 0px #7c7c7c;
+    position: absolute;
+    top:0;
+    display: none;
+    z-index:20000;
+}
+#navigation div {
+    float:left;
+}
+#navigation img {
+    margin-right:auto;
+    margin-left:auto;
+    display: block;
+}
+
+.scaleAdd {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}.scalebig {
+    transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+}
+.scaleAddmed {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+}
+.scaleAddlow {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+.centerAbs {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+#botnavigation {
+    width:100%;
+    bottom:0;
+    position: absolute;
+    left:0;
+    background-color:#fff;
+    box-shadow:0px 0px 15px 0px #7c7c7c;
+    z-index:20;
+    display: none;
+}
+#botnavigation button {
+    border:0;
+    background:transparent;
+    float:left;
+    position: relative;
+}
+#botnavigation button img{
+    position: absolute;
+    max-height:70%;
+    bottom:15%;
+    left:0;right:0;margin:auto;
+}
+#botnavigation button div {
+    background-color:#fff;
+    box-shadow: inset 0px 0px 0px 2px #007086;
+    border-radius:200em;position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    bottom:-20%;
+}
+#botnavigation button div img {
+    margin-bottom:10%;
+    max-height:60%;
+}
+
+.greenbackCirc {
+    background: #bacb2f;
+    border-radius:200em;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+    float:left;
+}
+
+.remember button:after {
+    content:'';
+    position: absolute;
+    background-image: url(../img/buttons/checked-mark.png);
+    width:70%;
+    height:70%;
+    margin:15%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.2s; /* Safari */
+    transition: all 0.2s;
+    left:0;
+    top:0;
+    background-size: contain;
+    
+}
+.remember[rememberAllowed=no] button:after { 
+    content:'';
+    position: absolute;
+    background-image: url(../img/buttons/checked-mark.png);
+    background-size: contain;
+    left:0;
+    top:0;
+    width:70%;
+    height:70%;
+    margin:15%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.2s; /* Safari */
+    transition: all 0.2s;
+}
+.remember button {
+    position: relative;
+}
+
+#allabout .slide {
+    position: absolute;
+    top:0;
+    visibility: hidden;
+    left:0;right:0;margin:auto;
+}
+#allabout .slide.active {
+    visibility: visible;
+}
+
+.slideMenu {
+    position: absolute;
+    bottom:5%;
+    left:0;right:0;
+    margin:auto;
+}
+.slideMenu div {
+    border-radius: 20em;
+    background-color: #fff;
+    float:left;
+    opacity:0.5;
+    margin:0.1em;
+}
+.slideMenu div.active {
+    opacity:1;
+}
+
+#allabout {
+    overflow: hidden;
+}
+
+.standardtext {
+    margin:0 10%;
+    width:80%;
+    text-align: center;
+}
+
+.scaleIpad {
+    overflow: auto;
+    position: relative;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
+
+#scaleIpad {
+    transform-origin: 50% 7%;
+    -webkit-transform-origin: 50% 7%;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+a {
+    color:#abc433;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    
+}
+ul li {
+    color:#bacb2f;
+    text-align: center;list-style: circle;margin:3px 0;
+}
+
+#popup {
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed; top:0;left:0;
+    width:100%;
+    height:100%;
+    z-index: 200000;
+}
+
+.close {
+    position: absolute;
+    top:10%;
+    right:3%;
+    max-width: 5%;
+}
+
+.boti {
+    overflow: hidden;
+    position: relative;
+    top:-44%;
+        
+}
+
+.whiteMenu {
+    position: absolute;
+    top:0; left:0;
+    background-color:#fff;
+    border-radius: 2000rem;
+    box-shadow:inset 0px 0px 0px 2px #007086;
+}
+.whiteMenu img {
+    position: absolute;
+}
+
+#botMenu {
+    position: absolute;
+    bottom:9%;
+    left:0;right:0;margin:auto;
+    overflow: hidden;
+    z-index:10;
+    display: none;
+}
+
+#mainBotButton img[active=false] {
+    display: none;
+}
+
+.overMark[active=false] {
+    display:none;
+}
+.overMark p {
+    color:#000;margin:0.3em 0;
+}
+.overMark {
+    color:#000;
+    width:100%;
+    clear:both;
+    padding-bottom: 5em;
+}
+.types,.nextday {
+    border-bottom: 1px solid #404040;
+    float:left;
+    width:100%;
+}
+.types button[active=true] {
+    background:#007086;
+}
+.types button,.nextday button {
+    background:#404040;
+    color:#fff;
+    width:45%;
+    float:left;
+}
+.nextday {
+border:0;
+    }
+.nextday button{
+    width:45%;
+    margin:0 2.5%;
+    background:#007086;
+}
+.types button:nth-child(1) {
+    margin-right: 7%;
+}
+.pcheck p {
+    margin:0;
+}
+.title > div:nth-child(2) {
+    width:75%;
+    float:left;
+}
+.title > div:nth-child(1) div:nth-child(2){
+    background-color: #404040;color:#fff;
+    margin-top:-25%;
+    margin-left:16%;
+    text-align: center;
+}
+.title > div:nth-child(1) div:nth-child(1){
+    background-color:#007086;color:#fff;
+    text-align: center;
+}
+.title > div:nth-child(1) div{
+    border-radius: 200em;
+    border:0;
+}
+.title > div:nth-child(1) {
+    width:22%;
+    margin-right:3%;
+    float:left;
+}
+.ingrd {
+    width:95%;
+    padding:0 2.5%;
+    background-color: #fff;
+    overflow:scroll;
+    clear:both;-webkit-overflow-scrolling: touch;
+    padding-bottom:15em;
+}
+.recipe {
+    float:left;width:72%;
+}
+.recipe h2 {
+    color:#007086;font-weight: normal;
+}
+.recipe div {
+    border-radius: 200em;
+    box-shadow:0px 0px 0px 2px #fff;
+    color:#007086;
+    float:left;
+
+    background-color:#fff;
+    text-align: center;
+}
+.recipe div[active=true] {
+    background-color:#bacb2f;
+}
+#highSection {
+    width:95%;
+    margin-left:2.5%;
+    clear:both;
+    overflow: hidden;
+}
+button {
+    border:0;
+}
+.greyCircle {
+    margin-right:3%;
+    background:#404040;
+    color:#fff;
+    box-shadow:0px 0px 0px 2px #fff;
+    border-radius:200em;
+    float:left;
+}
+.overMark ol {
+    clear:both;
+}
+#breakfast[active=true],#lunch[active=true],#snack[active=true],#dinner[active=true] {
+    display: block;
+}
+#breakfast,#lunch,#snack,#dinner {
+    display: none;
+}
+
+.loginTrans {
+    transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+     
+      .maxAdjust {
+        -webkit-transform-origin:50% 42% !important;
+        transform-origin:50% 42% !important;
+      }
+      .highAdjust {
+        -webkit-transform-origin:50% 30% !important;
+        transform-origin:50% 30% !important;
+    }
+      .midiAdjust {
+        -webkit-transform-origin:50% 20% !important;
+        transform-origin:50% 20% !important;
+    }
+}
+.viridian {
+    max-height:55%;
+    max-width:50%;
+}
+.noadjust {
+    transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
+
+
+
+.nextButton {
+    position: absolute;
+    right:4%;
+    background-color: #fff;
+    top:0;
+    z-index: 200000;
+}
+
+.setButton,.agebutton {
+    margin:0.5em auto;
+                background-color: #bacb2f;
+                color:#007086;
+                border-radius: 200em;
+                border:2px solid #fff;
+                position: relative;
+    display: block;
+}
+.agebutton span {
+    position: relative;display: block;
+}
+
+.shadowFlow {
+position: relative;
+    margin: 0 auto;
+}
+.shadowFlow:before {
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 20;
+    box-shadow:inset 0px -10px 5px 2px #007086;
+    pointer-events: none;
+}
+
+.recipeImage {
+    border-radius: 200em;
+    margin-top:-0.3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    background-size: cover;
+}
+
+.title button:nth-child(2) {
+    z-index: 6;
+    position: relative;
+}
+
+.shareInput {
+    width:70%;
+    float:left;
+    padding:0.4em;border-radius:0.3em;
+    border:0;
+    box-shadow:inset 0px 0px 0px 1px #ddd;
+    background-color: #fff;
+    color:#aaa;
+}
+#maintable {
+    padding-bottom: 15em;
+}
+.paddingAdd {
+    padding:0em 1.5em 1em;
+}
+.full p{
+    text-align: center;
+}

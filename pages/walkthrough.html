@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="scaleIpad">
+        <h2 class="blueText h2tit vhmt16 fontv7 ">The 7 Day Sugar Detox</h2>
+        <div class="bluecirc active vw35 vwh35 borrad50 vhmt5 " ontouchstart='
+    pageChange("pages/all-about.html", "fade", function() {allAboutInitial();
+    });'>
+            <h3  class="fontv7 vhmt5 lineh7">All<br>About</h3>
+        </div>
+        <div class="bluecirc vw35 vwh35 borrad50 vhmt3">
+            <h3  class="fontv7 vhmt9 lineh7" ontouchstart='setupCheck();'>Set Up</h3>
+        </div>
+        <div ontouchstart='finishCheck();'class="bluecirc greencirc vw35 vwh35 borrad50 vhmt3">
+            <h3  class="fontv7 vhmt9 lineh7">Start</h3>
+        </div>
+        <style>
+            .h2tit {
+                text-align:center;
+            }
+            .bluecirc {
+                background-color:#007086;
+                color:#bacb2f;
+                overflow:hidden;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            .greencirc {
+                background-color:#bacb2f;
+                color:#007086;
+            }
+            .bluecirc h3 {
+                text-align:center;
+                float:left;
+                width:100%;
+                font-weight: normal;
+            }
+            .bluecirc.active {
+                transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+            }
+        </style>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "763873239931",
+    "firebase_url": "https://viridian-7-day-detox.firebaseio.com",
+    "project_id": "viridian-7-day-detox",
+    "storage_bucket": "viridian-7-day-detox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763873239931:android:1fb86a9e44914660",
+        "android_client_info": {
+          "package_name": "com.viridian.detox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763873239931-pqldfq3ee1gtocsk1u3ah8t6tluo75ro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_w2vOxLwh8a939AZQI7e8HRiUSV_xVzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

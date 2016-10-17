@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="scaleIpad"class="maxAdjust">
+        <div id="daily" class="blueCentralCircle vw100 vwh100 scalebig">
+            <h2 id="dailynum" class="fontv5 vhmt3 vhmb1" style="color:#fff;font-weight:normal;">Day <span>1</span></h2>
+            <h2 class="fontv4 vhmt1 vhmb1" style="color:#abc433;font-weight:normal;">Congratulations, <br>you’re on your way. </h2>
+            <div class="fontv3 noday" style="width:70%; margin: 0 15%; color:#fff;">
+                Dehydration is a one of the main enemies of low sugar eating - make sure you’re drinking plenty of
+water. You might find you are going to the loo a lot but eventually your body will adjust.
+            </div>
+            <div class="fontv3 daily1" style="width:70%; margin: 0 15%; color:#fff;">
+                Today should be plain sailing as long as your prepared. If you’re hungry, eat something, so make sure you have plenty of non-sugary snacks on hand. Vegs, cheese, nuts and seeds are all good alternatives.
+            </div>
+            <div class="fontv3 daily2" style="width:70%; margin: 0 15%; color:#fff;">
+Dehydration is a one of the main enemies of low sugar eating - make sure you’re drinking plenty of
+water. You might find you are going to the loo a lot but eventually your body will adjust.
+            </div>
+            <div class="fontv3 daily3" style="width:70%; margin: 0 15%; color:#fff;">
+You might start to feel some cravings now.People can feel agitated and grumpy. Remember, sugar can be
+addictive and the withdrawal effects are physical. They’ll pass and Viridian will help. Try having a
+few raw nuts– many people find this helps ease the tension.
+            </div>
+            <div class="fontv3 daily4" style="width:70%; margin: 0 15%; color:#fff;">
+                Cutting out sugar can have an effect on your digestive system too. Make sure you’re having plenty of
+vegetables, fibre and whole foods to keep everything in order.
+            </div>
+            <div class="fontv3 daily5" style="width:70%; margin: 0 15%; color:#fff;">
+                Dehydration is one of the main enemies of low sugar eating - make sure you’re drinking plenty of water.
+You might find you are going to the loo a lot but eventually your body will adjust.
+            </div>
+            <div class="fontv3 daily6" style="width:70%; margin: 0 15%; color:#fff;">
+                Dehydration is a one of the main enemies of low sugar eating - make sure you’re drinking plenty of
+water. You might find you are going to the loo a lot but eventually your body will adjust.
+            </div>
+            <div class="fontv3 daily7" style="width:70%; margin: 0 15%; color:#fff;">
+                Dehydration is a one of the main enemies of low sugar eating - make sure you’re drinking plenty of
+water. You might find you are going to the loo a lot but eventually your body will adjust.
+            </div>
+            <div class="central vhmt2">
+                <div class="greenCirc vw24 vwh24" id="alarm" onclick='pageChange("pages/setup/schedule.html", "popup", function() {
+                          timeSelection();  
+                                    dailyTimer(); 
+                          
+    });'>
+                    <p class="vhmt2 fontv3" style="margin-bottom:0;">Schedule</p>
+                    <p class="time1 fontv3" style="margin:0;">9:00am</p>
+                    <p class="time2 fontv3" style="margin:0;">6:00pm</p>
+                    <img src="img/buttons/setup/clock.png" />
+                </div>
+                <div id="mealsugar"class="greenCirc grey vw24 vwh24">
+                    <p class="vhmt2 fontv2" style="margin-bottom:0;">so far you<br>have saved*</p>
+                    <div>
+                        <p class="fontv5" id="gramSaved">000</p>
+                        <p class="fontv1">grams<br>of sugar</p>
+                    </div>
+                    <img src="img/buttons/spoon-white.png" />
+                    <p class="fontv1" style="margin-top:0;transform:scale(0.8);-webkit-transform:scale(0.8);">*estimated</p>
+                </div>
+                <img class="vw24" id="mealplantoday" src="img/meal-plan.png" />
+            </div>
+            <h2 class="fontv3 vhmt2" style="clear:both;float:left;width:100%;color:#abc433;font-weight:normal;margin-bottom:0;">How are you feeling today?</h2>
+            <div id="faces" class="vw44">
+                <div ontouchstart="moodClick(this, 0)" class="vw11 " active="false">
+                    <img url="happy" src="img/emoji/happy-grey.png" />
+                    <p class="fontv2">Happy</p>
+                </div>
+                <div ontouchstart="moodClick(this,1)" class="vw11 " active="false">
+                    <img url="irritable" src="img/emoji/irritable-grey.png" />
+                    <p class="fontv2">Irritable</p>
+                </div>
+                <div ontouchstart="moodClick(this,2)" class="vw11 " active="false">
+                    <img url="stressed" src="img/emoji/stressed-grey.png" />
+                    <p class="fontv2">Stressed</p>
+                </div>
+                <div ontouchstart="moodClick(this,3)" class="vw11 " active="false">
+                    <img url="tired" src="img/emoji/tired-grey.png" />
+                    <p class="fontv2">Tired</p>
+                </div>
+            </div>
+            <div id="sharefeeling" ontouchstart="shareToggle('true','I did it! Viridian 7 day sugar detox', 'daily')" placeholder="How is today's sugar detox?">
+                <div id="inputShare"  type="text" class="fontv3 shareInput" >How is today's sugar detox?</div>  
+                <img class="active" src="img/buttons/fb-share.png" />
+            </div>
+        </div>
+        <style>
+            .fb-share {
+                margin:0 auto;
+            }
+            .closeShare{
+                position: absolute;
+            }
+            #sharefeeling img {
+                max-width:20%;
+                float:right;
+                margin-top:-1em;
+            }
+            #sharefeeling {
+                width:70%;
+                margin: 0 auto;
+            }
+           
+            #faces div p {
+                color:#fff;
+                margin-top:0;
+                text-align: center;
+            }
+            #faces img {
+                max-width:80%;
+                margin: 0 auto;
+            }
+            #faces div {
+                border:0;
+                background: transparent;
+                float:left;
+            }
+            #faces {
+                margin:0 auto;
+            }
+            #mealsugar div p{
+                width:50%;
+                float:left;
+                margin:0;
+            }
+            .central {
+                clear:both;
+                padding:1em;
+            }
+            .central > img {
+                float:left;
+            }
+            #alarm img {
+                max-width:25%;
+            }
+            #alarm p{
+                text-align: center;
+            }
+            .greenCirc {
+                background-color: #abc433;
+                border-radius: 200em;
+                color:#007086;
+                box-shadow:inset 0px 0px 0px 1px #fff;
+                overflow: hidden;
+                float:left;
+            }
+            .noday,.daily1,.daily2,.daily3,.daily4,.daily5,.daily6,.daily7 {
+                display:none;
+            }
+            
+            .central {
+                width:80%;
+                margin:0 10%;
+            }
+            .grey {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                background-color:#404040;
+                color:#fff;
+            }
+            #mealsugar img {
+                max-width:50%;
+                margin:0 auto;
+                float:none;
+                clear:both;
+                margin:0 25%;
+            }
+        </style>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>7 day detox</title>
+    <script src="js/vunit-0.2.0.min.js"></script>
+
+    <!-- Instantiate vUnit.js passing a CSSMap with properties you want to play with -->
+    <script>
+        new vUnit({
+            CSSMap: {
+                '.vw': {
+                    property: 'width',
+                    reference: 'vw'
+                },
+                '.vwh': {
+                    property: 'height',
+                    reference: 'vw'
+                },
+                '.fontv': {
+                    property: 'font-size',
+                    reference: 'vw'
+                },
+                '.vwmt': {
+                    property: 'margin-top',
+                    reference: 'vw'
+                },
+                '.vhmt': {
+                    property: 'margin-top',
+                    reference: 'vh'
+                },
+                '.vhmb': {
+                    property: 'margin-bottom',
+                    reference: 'vh'
+                },
+                '.borrad': {
+                    property: 'border-radius',
+                    reference: 'vw'
+                },
+                '.lineh': {
+                    property: 'line-height',
+                    reference: 'vw'
+                },
+                '.maxw': {
+                    property: 'max-width',
+                    reference: 'vw'
+                },
+                '.maxh': {
+                    property: 'max-height',
+                    reference: 'vw'
+                },
+                '.vh': {
+                    property: 'height',
+                    reference: 'vh'
+                },
+                '.vhw': {
+                    property: 'width',
+                    reference: 'vh'
+                }
+            },
+            onResize: function() {
+                console.log('A screen resize just happened, yo.');
+            }
+        }).init(); // call the public init() method
+        
+        function getActualWidth()
+        {
+            var actualWidth = window.innerWidth ||
+                              document.documentElement.clientWidth ||
+                              document.body.clientWidth ||
+                              document.body.offsetWidth;
+
+            return actualWidth;
+        }
+        function getActualHeight()
+        {
+            var actualHeight  = window.innerHeight ||
+                              document.documentElement.clientHeight  ||
+                              document.body.clientHeight  ||
+                              document.body.offsetHeight ;
+
+            return actualHeight;
+        }
+        function setAspectScale() {
+            var aspectScale = (getActualWidth() / getActualHeight());
+            
+            var newscale = 1 - (aspectScale - 0.53);
+            
+            if(newscale > 1) {
+                newscale = 1;
+            }
+            var head = head = document.head || document.getElementsByTagName('head')[0];
+            var css = '#scaleIpad { transform: scale(' + newscale + '); -webkit-transform: scale(' + newscale + '); }';
+            var style = document.createElement("style");
+            style.type = 'text/css';
+            if (style.styleSheet){
+              style.styleSheet.cssText = css;
+            } else {
+              style.appendChild(document.createTextNode(css));
+            }
+            head.appendChild(style);
+        }
+            setAspectScale();
+    </script>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div class="blueCentralCircle vw100 vwh100 scaleAdd">
+            <h2 class="splashhead1 fontv6 vhmt4 vhmb2">Say <span class="greenText">goodbye</span><br>to sugar</h2>
+            <img class="imgSplash vhmb2" src="img/bag.png"/>
+            <style>
+                .splashhead1 {
+                    font-weight:normal;
+                    
+                }
+                .splashhead2 {
+                    font-weight:normal;
+                    margin-top:0;
+                }
+                .imgSplash {
+                    max-width:30%;
+                }
+            </style>
+            <h2 class="splashhead2 fontv6">Say <span class="greenText">hello</span> to better<br>health, better<br>sleep and better<br>vitality</h2>
+        </div>
+    </div>
+    <div id="navigation" class="vh7">
+        <div class="vw25 " id="backbutton"><img class="maxh5 vhmt2" src="img/buttons/back.png" /></div>
+        <div class="vw50 "><img class="viridian vhmt2" src="img/viridian-logo.png" /></div>
+        <div class="vw25 "><img ontouchstart='
+    pageChange(homepageLink, "fade", function() {  
+            homepageFunction();openSideButtons();
+    });' class="maxh5 vhmt2 paddingAdd" src="img/buttons/home.png" /></div>
+    </div>
+    <div id="botnavigation" class="vh9">
+            <button ontouchstart='
+    pageChange("pages/setup/setprofile.html", "fade", function() { 
+                          profileSetup();
+                                  closeSideButtons();
+    displayMenu("", true, homepageLink,function() {
+                           });    
+    });'class="vw17 vh9"><img src="img/buttons/profile.png"/></button>
+            <button ontouchstart='
+    pageChange("pages/setup/shoppinglist.html", "fade", function() { 
+                             openShopping();
+                                  closeSideButtons();
+    displayMenu("", true, homepageLink,function() {
+                           });    
+    });'class="vw17 vh9"><img src="img/buttons/shopping.png"/></button>
+            <button id="mainBotButton" open="false" class="vw32 vh13 boti" ontouchstart="openBotMenu()"><div class="vhw15 vh15"><img active="true" src="img/buttons/main-i.png"/>
+            <img active="false" class="vw8 vwh8" src="img/bot-menu/black-cross.png" /></div></button>
+            <button ontouchstart='var ref = cordova.InAppBrowser.open("http://www.viridian-nutrition.com/search.aspx", "_blank", "location=yes");' class="vw17 vh9"><img src="img/buttons/store.png"/></button>
+            <button style="opacity:0.4" class="vw17 vh9"><img src="img/buttons/advice.png"/></button>
+    </div>
+    <div id="botMenu" class="vw98 vwh35">
+        <div class="whiteMenu vw98 vwh98">
+            <img ontouchstart='
+    pageChange("pages/setup/settings.html", "fade", function() {  
+                           settingsSetup();openBotMenu();
+                               closeSideButtons();
+    });' class="vw16" style="left:11%;top:17%;" src="img/bot-menu/settings.png" />
+            <img  ontouchstart='
+    pageChange("pages/allabout/allabout1.html", "fade", function() {  
+                                nextCheck();openBotMenu();
+                               closeSideButtons();
+    displayMenu("", true, homepageLink,function() {
+                           });
+    });' class="vw16" style="left:25%;top:6%;" src="img/bot-menu/videos.png" />
+            <img ontouchstart='
+    pageChange("pages/allabout/allabout4.html", "fade", function() { 
+                                nextCheck();openBotMenu();
+                               closeSideButtons();
+    displayMenu("", true, homepageLink,function() {
+                           });    
+    });'class="vw16"  style="left:0;right:0;margin:auto;top:2%;" src="img/bot-menu/sugar.png" />
+            <img ontouchstart='
+    pageChange("pages/allabout/allabout2.html", "fade", function() { 
+                                nextCheck();openBotMenu();
+                               closeSideButtons();
+                          onesecond();     
+    displayMenu("", true, homepageLink,function() {
+                           });
+    });'class="vw16" style="right:25%;top:6%;" src="img/bot-menu/about.png" />
+            <img ontouchstart='
+    pageChange("pages/setup/rules-single.html", "fade", function() {  
+                           rulesPop();openBotMenu();
+                               closeSideButtons();
+    displayMenu("", true, homepageLink,function() {
+                           });   
+    });'class="vw16" style="right:11%;top:17%;" src="img/bot-menu/detox.png" />
+        </div>
+    </div>
+    <div id="popup"></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/pagespecific.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/hammer.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+        
+    </script>
+</body>
+
+</html>

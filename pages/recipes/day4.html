@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="full" class="app textureBack">
+        <div id="fullrecipe">
+        <div id="highSection" class="vhmt10 ">
+            <button class="greyCircle vw22 vwh22 fontv6">
+                Day 4
+            </button>
+            <div class="recipe">
+                <h2 class="fontv9 vhmt12 fontti vhmb1" style="margin-top:0">Today's Recipes</h2>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(0)" ontouchstart="recipeTime(0)" active="true"><span>Breakfast</span></div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(1)" ontouchstart="recipeTime(1)">Lunch</div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(2)" ontouchstart="recipeTime(2)">Snack</div>
+                <div class="lineh16 vw16 vwh16 fontv3" onclick="recipeTime(3)" ontouchstart="recipeTime(3)">Dinner</div>
+            </div>
+        </div>
+            <div class="nextday vhmt2">
+                <button class="fontv4 lineh6"ontouchstart=' pageChange("pages/recipes/day3.html", "fade", function() {
+    });'>Previous day</button>
+                <button class="fontv4 lineh6" ontouchstart=' pageChange("pages/recipes/day5.html", "fade", function() {
+    });'>Next day</button>
+            </div>
+        <div id="breakfast" class="ingrd  vh60" active="true">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Breakfast</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">1</span></div>
+                    <div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/Whole-grain-bread-with-avocado-&-freesh-chilli.jpg);"></div>
+                    
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Whole grain rye bread
+with avocado, sea salt
+and fresh chilli</h2>
+				   <p class="fontv3">Avocado is made up of essential fats that are more useful for bodily functioning compared with saturated fats and help you feel fuller for longer. Evidence suggests that whole grain rye bread can help with weight management, insulin sensitivity and lower cholesterol. It is also high in protein and dietary fibre helping to keep you fuller for longer and stop those sugary cravings. </p>
+
+                </div>
+            </div>
+            <div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 0)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 0)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">1 avocado </p>
+                <hr>
+                <p class="fontv4">½ lime  </p>
+                <hr>
+                <p class="fontv4">1-2 slices of rye bread</p>
+                <hr>
+                <p class="fontv4">Viridian Nutrition Organic Black Seed Oil </p>
+                <hr>
+                <p class="fontv4">Small handful of Lettuce</p>
+                <hr>
+                <p class="fontv4">One tomato</p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Run a knife lengthways all the way around the avocado, take each half in each hand and twist your right hand forward and left hand back, this will free the avocado from the stone.  Scoop out the avocado flesh and in a bowl.</li>
+                    <li class="fontv4">Mash with a fork, season with sea salt, ground pepper and the juice from half of a lemon or lime.</li>
+                    <li class="fontv4">Lightly toast one or two slices of rye bread, drizzle with the Viridian Organic Black Seed oil and top with lettuce, sliced tomatoes and the avocado mix.</li>
+                </ol>
+                <p class="fontv4">Optional: Sprinkle with Organic Soul Food Greens. </p>
+            </div>
+        </div>
+        <div id="lunch" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Lunch</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">1</span></div>
+					<div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/vegetable-stir-fry-&-rice.jpg);"></div>
+
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Vegetable stir-fry and
+rice</h2>
+                    <p class="fontv3">Coconut oil is great for stir frying as it keeps its goodness at high temperatures and doesn’t turn into nasty trans-fats. Cumin and coriander seeds provide a tasty aromatic flavour to the dish and are high in iron, calcium and magnesium all of which help with overall health and well-being.</p>
+                    
+                </div>
+            </div>
+            <div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 1)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 1)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">35g wild rice</p>
+                <hr>
+                <p class="fontv4">40g basmati rice </p>
+                <hr>
+                <p class="fontv4">½ aubergine </p>
+                <hr>
+                <p class="fontv4">1 carrot</p>
+                <hr>
+                <p class="fontv4">½ onion</p>
+                <hr>
+                <p class="fontv4">1 pepper</p>
+                <hr>
+                <p class="fontv4">1 tablespoon Viridian Organic Raw Coconut Oil</p>
+                <hr>
+                <p class="fontv4">½ teaspoon of cumin seeds </p>
+                <hr>
+                <p class="fontv4">½ coriander seeds</p>
+                <hr>
+                <p class="fontv4">½ teaspoon pink peppercorns </p>
+                <hr>
+                <p class="fontv4">Handful of spinach </p>
+                <hr>
+                <p class="fontv4">Ground black pepper & Himalayan rock salt (seasoning)</p>
+                
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Weigh out the wild rice and set to boil for 15 minutes. </li>
+                    <li class="fontv4">Weigh out the Basmati rice add to the boiling wild rice for a further 15 minutes or until the white rice is ‘ala dente’.</li>
+                    <li class="fontv4">While the rice is boiling, cube the aubergine, carrot, onion and pepper.</li>
+                    <li class="fontv4">In the wok or frying pan warm one tablespoon of Viridian Nutrition Organic Raw Coconut Oil and add to the cumin and coriander seeds, once golden and popping, add the veggies and stir fry until soft.  </li>
+                    <li class="fontv4">Drain and rinse the rice and add to the stir fried vegetables.  </li>
+                    <li class="fontv4">Add half a teaspoon of pink peppercorns and stir through so the rice, vegetables and spices are combined.  Add a handful of spinach.  Remove from heat once the spinach wilts and serve seasoned with ground black pepper and Himalayan rock salt.</li>
+                </ol>
+            </div>
+            
+        </div>
+        <div id="snack" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Snack</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">9</span></div>
+					<div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/seedy-mango-&-date-energy-bars.jpg);"></div>
+
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Seedy mango and date
+energy bars</h2>
+                    <p class="fontv3">Vegan, Sugar and Dairy free, contains gluten, nuts and sesame.</p>
+                    <p class="fontv3">These satisfying homemade energy bars were
+developed
+by my friend, work colleague, home baker and
+nutritional
+coach Eleanor Hagan. These are fantastic for adults’ and
+kids’ lunchboxes – just don’t let your mates know or
+there
+will be none left for you come lunchtime. High in
+vitamin E,
+zinc, dietary fibre, plant protein and essential fats. Low
+GL.</p>
+                </div>
+            </div><div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 2)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 2)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">150g coconut oil plus extra for greasing</p>
+                <hr>
+                <p class="fontv4">80g Medjool dates, stoned and finely chopped</p>
+                <hr>
+                <p class="fontv4">80g dark tahini (or you can use a pumpkin seed spread or
+peanut butter)</p>
+                <hr>
+                <p class="fontv4">120g rolled oats (you can also use quinoa flakes)</p>
+                <hr>
+                <p class="fontv4">80g chopped hazelnuts</p>
+                <hr>
+                <p class="fontv4">50g dried mango</p>
+                <hr>
+                <p class="fontv4">40g pumpkin seeds</p>
+                <hr>
+                <p class="fontv4">40g sesame seeds</p>
+                <hr>
+                <p class="fontv4">40g sunflower seeds</p>
+                <hr>
+                <p class="fontv4">20g ground flaxseeds</p>
+                
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Preheat the oven to 180C/gas mark 4/350F. Lightly grease a 20cm square tin and line th base with baking parchment.</li>
+                    <li class="fontv4">In a small saucepan set over a medium heat, melt together the coconut oil, brown rice syrup, chopped dates and tahini. Stir constantly until smooth and thick.</li>
+                    <li class="fontv4">Combine the oats, hazelnuts, mango and seeds in a large bowl. Pour in the melted coconut mixture and stir well to combine.</li> 
+                    <li class="fontv4">Spoon the mixture into the prepared tin and press it down firmly and evenly with the back of a spoon. Bake for about 20 minutes, until lightly golden on top.</li>
+                    <li class="fontv4">Leave to cool, then slice into bars or squares. Eat straight away or store in an airtight container in the fridge for up to 10 days.</li>
+                </ol>
+            </div>        
+        </div>
+        <div id="dinner" class="ingrd  vh60" active="false">
+            <div class="title ">
+                <div>
+                    <div class=" vw20 vwh20 fontv4 lineh20" >Dinner</div>
+                    <div class=" vw13 vwh13 fontv3" ><br>Serves<br><span class="fontv4">2</span></div>
+                    <div class="recipeImage vw20 vwh20" style="background-image:url(img/food-images/vegie-bake-image-1_500px.jpg);"></div>
+                    
+                </div>
+                <div class="pcheck">
+                    <h2 class="fontv6 vhmb1">Oliver’s FuelFood Veggie Bake</h2>
+                    <p class="fontv3">Vegan, Sugar Gluten Dairy & Nut free, contains celery</p>
+                    <p class="fontv3">I love using layers of grains and vegetables when
+creating
+our popular vegetarian and vegan bakes for the deli.
+You
+could also add cooked marinated chicken, fish, lamb or
+beef as a layer to this dish if you like. High in plant
+protein,
+dietary fibre, essential fats and vitamin C.</p>
+                </div>
+            </div><div class="types vhmt2 vhmb2">
+                <button class="fontv4 lineh8" ontouchstart="methodswap(0, 3)" active="true">Ingredients</button>
+                <button class="fontv4 lineh8" ontouchstart="methodswap(1, 3)">Method</button>
+            </div>
+            <div class="overMark " active="true">
+				<h2>Ingredients</h2>
+                <p class="fontv4">800ml water</p>
+                <hr>
+                <p class="fontv4">2 low-salt, yeast-free, gluten-free vegetable stock cubes</p>
+                <hr>
+                <p class="fontv4">200g brown lentils, washed and rinsed</p>
+                <hr>
+                <p class="fontv4">200g millet, washed and rinsed</p>
+                <hr>
+                <p class="fontv4">200g baby spinach</p>
+                <hr>
+                <p class="fontv4">200g sweet potato, peeled and cubed</p>
+                <hr>
+                <p class="fontv4">1 tablespoon harissa paste</p>
+                <hr>
+                <p class="fontv4">1 teaspoon ground turmeric</p>
+                <hr>
+                <p class="fontv4">2 tablespoons viridian organic raw coconut oil</p>
+                <hr>
+                <p class="fontv4">150g onions, diced</p>
+                <hr>
+                <p class="fontv4">150g red peppers, diced</p>
+                <hr>
+                <p class="fontv4">2 large cloves of garlic, minced</p>
+            </div>
+            <div class="overMark " active="false">
+				<h2>Method</h2>
+                <ol>
+                    <li class="fontv4">Preheat the oven to 180°C/gas mark 4/350°F.
+Boil the water and add the vegetable stock cubes. Stir to
+dissolve and leave to one side.</li>
+                    <li class="fontv4">To begin with, you need three medium saucepans. In the
+first saucepan, cover the lentils with 400ml of the vegetable
+stock. Simmer for 25 minutes, until the stock has been
+soaked up and the lentils have collapsed. Add some more
+water and continue to cook for 10 minutes more, until the
+lentils are cooked through. Drain off any excess water in a
+colander or sieve and set aside.</li>
+                    <li class="fontv4">Another saucepan is for the millet. Again, add 400ml of
+the vegetable stock and simmer for 15 minutes, until the
+stock has been soaked up by the millet. Add some water
+and continue to cook for 5 minutes more, until the millet is
+fluffy. Drain off any excess water in a colander or sieve and
+set aside.</li>
+                    <li class="fontv4">While the millet is cooking, use a sieve to steam about
+50g of the baby spinach over the saucepan. This will take
+5 minutes. Set aside.</li>
+                    <li class="fontv4">The last saucepan is for the sweet potatoes. Cover them
+with hot water and simmer for about 20 minutes, until soft.
+Drain and place the sweet potatoes back into the saucepan.
+Mash with the harissa paste and turmeric until you have a
+thick purée.</li>
+                    <li class="fontv4">Now heat 1 tablespoon of the oil in a wok over a medium
+heat. Add the onions, peppers, the rest of the baby spinach
+and the garlic. Sauté for 5 minutes, until the vegetables are
+soft. Add a little water to the base of the wok if it looks too
+dry. Remove from the heat once the vegetables are soft.</li>
+                    <li class="fontv4">This is the fun part: layering. Grab a medium-sized
+deep baking tray or dish and grease with the remaining
+tablespoon of oil. Add the millet as your base, using
+a spatula or wooden spoon to flatten it. Next add the
+vegetable mix on top of the millet, again flattening it. (This is
+where you could add some meat or fish if you wanted to as
+the next layer.) Add the lentils and flatten them, then top it
+off with the lightly spiced sweet potato mash. As you do so,
+mix the steamed baby spinach on top and create your own
+design.</li>
+                    <li class="fontv4">Finally, pop the dish in the oven for 20 minutes, until the
+top is toasty. Cut servings with a large knife and serve with a
+spatula. It’s beautiful with a salad of your choice.</li>
+                </ol>
+            </div>
+        </div>
+		<div class="printer">
+		<img onclick="printRecipe()" src="img/print.png" /><p onclick="printRecipe()">Print</p>
+		</div>
+        </div>
+    </div>
+</body>
+
+</html>
