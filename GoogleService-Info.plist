@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>763873239931-9e68cgvs02instln6b660gg1mi46j57s.apps.googleusercontent.com</string>
+	<string>763873239931-0e9d0pt88bhc6tojk0povuhb1330r960.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.763873239931-9e68cgvs02instln6b660gg1mi46j57s</string>
+	<string>com.googleusercontent.apps.763873239931-0e9d0pt88bhc6tojk0povuhb1330r960</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCqqOytzId3i_CP-iN1k8B_qJclKh5gSUc</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.viridian.7daydetox</string>
+	<string>com.viridian.detox</string>
 	<key>PROJECT_ID</key>
 	<string>viridian-7-day-detox</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:763873239931:ios:b60230b208abcfca</string>
+	<string>1:763873239931:ios:1fb86a9e44914660</string>
 	<key>DATABASE_URL</key>
 	<string>https://viridian-7-day-detox.firebaseio.com</string>
 </dict>
